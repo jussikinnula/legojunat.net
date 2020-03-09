@@ -113,7 +113,7 @@ const Page: QueryComponent<PageProps> = props => {
   const slices = oc(page).body();
 
   return (
-    <Layout title={title} description={description} image={image}>
+    <Layout title={title} description={description}>
       <VideoWrapper>
         {image && <Image src={image.url} alt={image.alt} />}
         {/* tslint:disable-next-line:jsx-no-multiline-js */}
