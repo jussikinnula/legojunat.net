@@ -15,9 +15,9 @@ if (!PRISMIC_ACCESS_TOKEN) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Finnish Electronic Music Association',
+    title: 'Legojunat.net',
     description: '',
-    url: 'https://fema.fi',
+    url: 'https://www.legojunat.net',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -34,7 +34,7 @@ module.exports = {
       resolve: 'gatsby-source-prismic-graphql',
       options: {
         repositoryName: PRISMIC_REPOSITORY_NAME,
-        defaultLang: PRISMIC_DEFAULT_LANG || 'en-gb',
+        defaultLang: PRISMIC_DEFAULT_LANG || 'fi',
         accessToken: PRISMIC_ACCESS_TOKEN,
         path: '/preview',
         previews: false
